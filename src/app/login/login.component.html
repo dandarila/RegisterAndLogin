@@ -1,0 +1,36 @@
+<h2>Login</h2>
+<form #postForm="ngForm" (ngSubmit)="onLogin(postForm.value)">
+    <div id="user-data">
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input 
+                type="text" 
+                class="form-control" 
+                name="userName" 
+                ngModel />
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input 
+                type="password" 
+                class="form-control" 
+                name="password" 
+                ngModel/>
+        </div>
+        <div class="form-group">
+            <button
+                class="btn btn-primary"
+                type="submit"
+                
+                >
+                Login
+            </button>
+
+            <!-- <button class="btn btn-primary">Login</button> -->
+        </div>
+        <label class="checkbox">
+            <input type="checkbox" value="remember-me" id="remember_me" name="rememberMe" ngModel> Remember me
+        </label>
+    </div>
+</form>
+
